@@ -79,15 +79,16 @@
             <label><input type="checkbox" ng-model="counterClockwise" ng-true-value="1" ng-false-value="" /> Counter-clockwise</label>
         </div>
     </div>
-    <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="../angular-progress-arc.js"></script>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../angular-progress-arce.js"></script>
     <script>
         var app = angular.module('example', ['angular-progress-arc']);
         app.controller('ExampleCtrl', function ($scope) {
-            $scope.size = 200;
+            $scope.size = 240;
             $scope.progress = 0.75;
-            $scope.strokeWidth = 50;
-            $scope.stroke = '#333';
+            $scope.strokeWidth = 16;
+            $scope.stroke = '#3b80e8';
+            $scope.background = '#eeeeee';
             $scope.counterClockwise = '';
         });
     </script>

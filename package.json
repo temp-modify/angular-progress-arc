@@ -1,14 +1,14 @@
 {
-  "name": "angular-progress-arc",
+  "name": "angular-progress-arce",
   "version": "1.0.0",
-  "description": "AngularJS directive for displaying a circular progress meter.",
-  "main": "angular-progress-arc.js",
+  "description": "AngularJS directive for displaying a circular progress meter.fork angular-progress-arc,修改仓储名称为“angular-progress-arce”（angular-progress-arc for Erwin）",
+  "main": "angular-progress-arce.js",
   "directories": {
     "example": "example"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mathewbyrne/angular-progress-arc.git"
+    "url": "https://github.com/temp-modify/angular-progress-arc"
   },
   "keywords": [
     "angularjs",
@@ -16,20 +16,27 @@
     "progress",
     "svg"
   ],
-  "author": {
+  "oldAuthor": {
     "name": "Mathew Byrne",
     "email": "mathewbyrne@gmail.com",
     "url": "http://mathewbyrne.com/"
   },
+  "forkAuthor":{
+    "name": "Erwin",
+    "email": "golddream@live.cn"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mathewbyrne/angular-progress-arc/issues"
+    "url": "https://github.com/temp-modify/angular-progress-arc/issues"
   },
-  "homepage": "http://mathewbyrne.github.io/angular-progress-arc/",
+  "homepage": "https://github.com/temp-modify/angular-progress-arc",
+  "peerDependencies": {
+    "angular-bootstrap": "0.14.0"
+  },
   "devDependencies": {
-      "grunt": "~0.4.5",
-      "grunt-contrib-uglify": "~0.5.0",
-      "grunt-contrib-jshint": "~0.10.0"
+    "grunt": "~0.4.5",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-jshint": "~0.10.0"
   },
   "dependencies": {
     "angular": ">=1.2.19"

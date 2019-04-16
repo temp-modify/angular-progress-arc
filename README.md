@@ -1,5 +1,7 @@
-angular-progress-arc
+angular-progress-arce
 ====================
+
+fork "angular-progress-arc",修改仓储名称为“angular-progress-arce”（angular-progress-arc for Erwin）
 
 An [AngularJS](https://angularjs.org/) directive for displaying a circular progress meter.
 
@@ -13,7 +15,7 @@ Features
 - Displays a circular progress meter.
 - Utilises SVG for rendering.
 - Adjustable dimensions, color and thickness.
-- No additional dependencies outside of AngularJS.
+- Dependencies ''.
 
 Installation
 ============
@@ -46,6 +48,24 @@ Add a `progress-arc` element to your application as required.
     counter-clockwise="{string}"
     background="{string}">
 </progress-arc>
+```
+
+直接使用全局进度显示：
+
+注入服务`progressArcService`
+
+- 打开进度全局进度条
+```JavaScript
+      progressArcService.openProgress(function (changeProgress) {
+        $timeout(function () {
+          // 改变进度
+          changeProgress(0.1);
+        },500);
+      });
+```
+- 关闭全局进度条
+```JavaScript
+      progressArcService.closeProgress();
 ```
 
 Attributes
